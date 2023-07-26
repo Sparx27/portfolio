@@ -7,7 +7,9 @@ function Footer() {
 
       <div className='footer-txt'>
         <p><i>Made with love on Remix Run. Portfolio code:</i></p>
-        <a href='#'><img src={githubIcon} alt='github' /></a>
+        <a href='https://github.com/Sparx27/portfolio' target='_blank' rel='noreferrer'>
+          <img src={githubIcon} alt='github' />
+        </a>
       </div>
     </footer>
   )

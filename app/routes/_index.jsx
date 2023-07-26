@@ -15,6 +15,7 @@ import styledcomponentsLogo from '../../public/images/styledcomponents.png'
 import gitLogo from '../../public/images/git.png'
 import JSCertificate from '../../public/images/freecodecamp/JSCertificate.jpg'
 import webDesignCertificate from '../../public/images/freecodecamp/responsiveWebDesignCertificate.jpg'
+import githubIcon from '../../public/images/githubIcon.png'
 
 export function links() {
   return [
@@ -106,6 +107,13 @@ export default function Index() {
           <img src={JSCertificate} alt='js certificate' />
           <img src={webDesignCertificate} alt='responsive web design certificate' />
         </div>
+
+        <div className='footer-txt about-footer'>
+          <p><i>Made with love on Remix Run. Portfolio code:</i></p>
+          <a href='https://github.com/Sparx27/portfolio' target='_blank' rel='noreferrer'>
+            <img src={githubIcon} alt='github' />
+          </a>
+      </div>
 
       </div>
 

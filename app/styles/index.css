@@ -282,3 +282,8 @@ footer h2 {
   width: 33px;
   margin-left: .65rem;
 }
+
+.about-footer {
+  margin-top: 4rem;
+  justify-content: flex-end;
+}
