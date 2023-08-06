@@ -17,6 +17,8 @@ import JSCertificate from '../../public/images/freecodecamp/JSCertificate.jpg'
 import webDesignCertificate from '../../public/images/freecodecamp/responsiveWebDesignCertificate.jpg'
 import githubIcon from '../../public/images/githubIcon.png'
 
+import Footer from '../components/Footer'
+
 export function links() {
   return [
     {
@@ -113,7 +115,7 @@ export default function Index() {
           <a href='https://github.com/Sparx27/portfolio' target='_blank' rel='noreferrer'>
             <img src={githubIcon} alt='github' />
           </a>
-      </div>
+        </div>
 
       </div>
 
