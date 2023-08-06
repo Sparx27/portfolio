@@ -87,7 +87,7 @@ h3 {
   .bg-light {
     display: block;
     position: fixed;
-    z-index: 2;
+    z-index: -1;
     top: 50%;
     transform: translateY(-50%);
     left: 0;
