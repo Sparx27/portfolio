@@ -95,7 +95,7 @@ h3 {
     height: 0;
     border-radius: 50%;
     background-color: var(--color-primary);
-    box-shadow: 0 0 300px 220px rgb(50 209 103 / .105);
+    box-shadow: 0 0 300px 220px rgba(80, 235, 132, 0.105);
   }
 }
 
