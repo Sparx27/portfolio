@@ -87,7 +87,7 @@ h3 {
   .bg-light {
     display: block;
     position: fixed;
-    z-index: -1;
+    z-index: 2;
     top: 50%;
     transform: translateY(-50%);
     left: 0;
@@ -95,7 +95,7 @@ h3 {
     height: 0;
     border-radius: 50%;
     background-color: var(--color-primary);
-    box-shadow: 0 0 300px 220px rgb(50 209 103 / .105);
+    box-shadow: 0 0 300px 220px rgba(127, 196, 150, 0.105);
   }
 }
 
