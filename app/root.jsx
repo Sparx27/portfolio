@@ -7,7 +7,7 @@ import {
   useLocation
 } from '@remix-run/react'
 import { useEffect, useState } from 'react'
-import icon from '../public/Sfavicon.png'
+import icon from '../public/Sfavicon.ico'
 import Header from './components/Header'
 import Footer from './components/Footer'
 
@@ -32,7 +32,7 @@ export function links() {
     {
       rel: 'icon',
       href: icon,
-      type: 'image/png'
+      type: 'image/ico'
     },
     {
       rel: 'stylesheet',
