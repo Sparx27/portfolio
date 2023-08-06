@@ -16,16 +16,17 @@ import styles from '~/styles/index.css'
 export function meta() {
   return [
     {
-      charset: 'utf-8',
-      viewport: 'width=device-width,initial-scale=1',
+      charset: 'utf-8'
+    },
+    {
+      viewport: 'width=device-width,initial-scale=1'
+    },
+    {
       title: 'Sparx Portfolio'
     }
   ]
 }
-<link
-  rel="icon"
-  type="image/jpg"
-  href="favicon_image_location"/>
+
 export function links() {
   return [
     {

@@ -22,7 +22,6 @@ html {
 }
 
 body {
-  /* max-width: 150rem; */
   margin: 0 auto;
   background-color: var(--color-bg);
 }
@@ -61,7 +60,7 @@ h3 {
 }
 
 .display-full {
-  display: block;
+  display: initial;
 }
 
 /********** HEADER DISPLAY **********/

@@ -4,7 +4,6 @@ import sparxIcon from '../../public/images/sparxIcon.png'
 
 function Header({ display }) {
   const { pathname } = useLocation()
-  console.log(pathname)
 
   return (
     <header className={display}>

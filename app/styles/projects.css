@@ -2,8 +2,9 @@
   margin-bottom: 5rem;
 }
 
-.projects-container a {
-  text-decoration: none
+.projects-container {
+  display: flex;
+  flex-direction: column;
 }
 @media (min-width: 768px) {
   .projects-container {
@@ -19,7 +20,9 @@
     column-gap: 4rem;
   }
 }
-
+.projects-container a {
+  text-decoration: none
+}
 
 .project-box {
   margin-bottom: 3rem;
