@@ -10,8 +10,18 @@ import MERNInventoryApp from '../../public/images/projects/MERN-inventory-app.pn
 import cryptoQuotingSystem from '../../public/images/projects/crypto-quoting-system.png'
 import vetPatients from '../../public/images/projects/vet-patients.png'
 import expensePlanner from '../../public/images/projects/expense-planner.png'
+import MERNNotesApp from '../../public/images/projects/MERN-notes-app.png'
 
 export const projectsData = [
+    {
+    title: 'MERN Notes App',
+    description: 'This was my first full-stack project made using Node.js + Express, MongoDB + Mongoose, React, and styled with Bootstrap. Special thanks to midudev and Full Stack Open for the online course.',
+    image: MERNNotesApp,
+    url: 'mernnotesapp',
+    video: '<iframe width="560" height="315" src="https://www.youtube.com/embed/KqAzVxT402s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+    stack: ['Node.js', 'MongoDB', 'React', 'Bootstrap'],
+    monorepo: 'https://github.com/Sparx27/sparx-mern-notes-app'
+  },
   {
     title: 'GuitarLA',
     description: 'Using the Headless CMS Strapi for the backend, PostgreSQL created on render.com for the database, Cloudinary for the images, and Remix Run for the frontend, GuitarLA is an online guitar store.',
@@ -36,11 +46,11 @@ export const projectsData = [
   },
   {
     title: 'MERN Inventory App',
-    description: 'Full-stack project made with Node.js + Express, MongoDB + Mongoose, Cloudinary for images, and React + Redux. This application has several features, such as user registration (with bcrypt for encrypting passwords in the database), the ability to change their password, and password reset functionality in case they forget it. It also uses jsonwebtoken to maintain users logged in, and with nodemailer, the user can report a bug directly to my email from within the app. Nodemailer is also used to send the token for password reset if a user forgets it. Users can add items to their stock with images, descriptions, quantities, prices, and a description using a rich text editor (ReactQuill).',
+    description: 'Full-stack project made with Node.js + Express, MongoDB + Mongoose, Cloudinary for images, React + Redux, and styled with SASS. This application has several features, such as user registration (with bcrypt for encrypting passwords in the database), the ability to change their password, and password reset functionality in case they forget it. It also uses jsonwebtoken to maintain users logged in, and with nodemailer, the user can report a bug directly to my email from within the app. Nodemailer is also used to send the token for password reset if a user forgets it. Users can add items to their stock with images, descriptions, quantities, prices, and a description using a rich text editor (ReactQuill).',
     image: MERNInventoryApp,
     url: 'merninventoryapp',
     video: '<iframe width="560" height="315" src="https://www.youtube.com/embed/h00AKmTtspk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
-    stack: ['Node.js', 'MongoDB', 'React'],
+    stack: ['Node.js', 'MongoDB', 'React', 'SASS'],
     backend: 'https://github.com/Sparx27/sparx-mern-inventory-app-backend',
     frontend: 'https://github.com/Sparx27/sparx-mern-inventory-app-frontend'
   },
@@ -89,7 +99,6 @@ export const projectsData = [
     image: vetPatients,
     url: 'https://vite-react-tailwind-vet-patients.vercel.app/'
   },
-
   {
     title: 'Easybank',
     description: 'Static site created to improve my CSS and HTML structure',

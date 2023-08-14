@@ -37,13 +37,13 @@ export default function Index() {
         <div className="about-paragraph">
           <h3>Intro</h3>
           <p>
-            At the beginning of 2022, while I was working as a commercial administrator, I found something that really caught my attention: an online course called "JavaScript Algorithms and Data Structures" on freecodecamp.com. From then until now, I have kept learning web development by taking courses on Udemy, watching tutorials on YouTube, and reading documentation on the internet.
+            In early 2022, while employed as a commercial administrator, I stumbled upon something that truly piqued my interest: an online course titled "JavaScript Algorithms and Data Structures" on freecodecamp.com. Since then, I have been continuously advancing my knowledge in web development. I achieve this by enrolling in courses on Udemy, following tutorials on YouTube, and delving into online documentation.
           </p>
           <p>
-            Now I know that full-stack development is what I want to do. I find myself happy learning these things: code logic, front-end frameworks, creating a backend and connecting it with a database, learning new libraries, fixing bugs or adding new features to existing projects. In other words, being able to create apps or features that actually work fulfills me.
+            Now I am certain that full-stack development is what I want to do. I enjoy learning about various aspects, such as code logic, front-end frameworks, backend development involving database integration, exploring new libraries, debugging, and implementing new features within existing projects. In essence, I take pleasure in the process of crafting functional applications or features that truly work. I began my formal studies at ORT University Uruguay in August 2023, pursuing the program called "Analista en Tecnologías de la Información.". Additionally, I continue to independently expand my programming knowledge.
           </p>
           <p>
-            My name is Nicolás Giménez, I live in Montevideo, and I am 27 years old. I like a lot of things: philosophy, astronomy, psychology, plants (I have a lot in my apartment), cooking, art (paintings, to be exact) and of course, also love cats (is it possible not to love them?). I try to maintain good health by exercising at least four times a week and spending a good amount of time with my loved ones.
+            My name is Nicolás Giménez, residing in Montevideo, and I am 27 years old. I like a lot of things: philosophy, astronomy, psychology, plants (got a lot in my apartment), cooking, art (paintings, to be exact) and of course, also love cats (who could resist?). I try to maintain good health by exercising at least four times a week and spending a good amount of time with my loved ones.
           </p>
         </div>
 
