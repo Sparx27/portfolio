@@ -4,6 +4,10 @@
   margin-bottom: 3rem;
   color: var(--color-txt);
 }
+#ort {
+  font-weight: 500;
+  color: #d3d3d3;
+}
 
 .stack {
   margin-top: 8rem;
