@@ -4,6 +4,11 @@
   margin-bottom: 3rem;
   color: var(--color-txt);
 }
+@media (max-width: 560px) {
+  .about-paragraph p {
+    font-size: 1.6rem;
+  }
+}
 #ort {
   font-weight: 500;
   color: #d3d3d3;
