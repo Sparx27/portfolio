@@ -1,3 +1,7 @@
+.projects-content {
+  margin-top: -2.5rem;
+}
+
 .projects-content h3 {
   margin-bottom: 5rem;
 }
@@ -30,7 +34,7 @@
   border-radius: 5px;
   overflow: hidden;
   cursor: pointer;
-  transition: 1s all;
+  transition: .75s all;
 }
 .project-box:hover {
   border: 1px solid #f1f1f130;
@@ -59,7 +63,7 @@
   -webkit-line-clamp: 4;
   overflow: hidden;
   margin-bottom: 1rem;
-  font-size: 1.3rem;
+  font-size: 1.45rem;
   color: var(--color-txt);
 }
 

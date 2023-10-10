@@ -10,14 +10,12 @@ import nodeLogo from '../../public/images/node.png'
 import strapiLogo from '../../public/images/strapi.png'
 import mongodbLogo from '../../public/images/mongodb.png'
 import tailwindcssLogo from '../../public/images/tailwind.png'
+import bootstrapLogo from '../../public/images/bootstrap.png'
 import sassLogo from '../../public/images/sass.png'
 import styledcomponentsLogo from '../../public/images/styledcomponents.png'
 import gitLogo from '../../public/images/git.png'
 import JSCertificate from '../../public/images/freecodecamp/JSCertificate.jpg'
-import webDesignCertificate from '../../public/images/freecodecamp/responsiveWebDesignCertificate.jpg'
 import githubIcon from '../../public/images/githubIcon.png'
-
-import Footer from '../components/Footer'
 
 export function links() {
   return [
@@ -89,7 +87,11 @@ export default function Index() {
             <div className='img-card'>
               <img src={tailwindcssLogo} alt='tailwindcss logo' />
               <p className='img-txt'>Tailwind CSS</p>
-            </div>            
+            </div>
+            <div className='img-card'>
+              <img src={bootstrapLogo} alt='bootstrap logo' />
+              <p className='img-txt'>Bootstrap</p>
+            </div>          
             <div className='img-card'>
               <img src={sassLogo} alt='sass logo' />
               <p className='img-txt'>SASS</p>
@@ -107,7 +109,6 @@ export default function Index() {
 
         <div className='certificates-container'>
           <img src={JSCertificate} alt='js certificate' />
-          <img src={webDesignCertificate} alt='responsive web design certificate' />
         </div>
 
         <div className='footer-txt about-footer'>

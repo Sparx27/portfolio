@@ -1,6 +1,8 @@
 import { Link, useLocation } from '@remix-run/react'
 import myPhoto from '../../public/images/me.jpg'
 import sparxIcon from '../../public/images/sparxIcon.png'
+import { BsLinkedin, BsGithub } from 'react-icons/bs'
+import { BiLogoGmail } from 'react-icons/bi' 
 
 function Header({ display }) {
   const { pathname } = useLocation()
@@ -16,19 +18,39 @@ function Header({ display }) {
             <div className='presentation'>
                 <h2 className='presentation-name'>Nicolás G. Cardani</h2>
 
+                <h1 className='presentation-dev'>Web Developer</h1>
+
                 <div className='menu'>
-                  <img src={myPhoto} alt='sparx' />
                   <nav className='menu-nav'>
                     <ul>
                       <li><Link className={pathname === '/' ? 'links active' : 'links'} to='/'>About</Link></li>
                       <li><Link className={pathname === '/projects' ? 'links active' : 'links'} to='/projects'>Projects</Link></li>
-                      <li><Link className={pathname === '/contact' ? 'links active' : 'links'} to='/contact'>Contact</Link></li>
+                      {/* <li><Link className={pathname === '/contact' ? 'links active' : 'links'} to='/contact'>Contact</Link></li> */}
                     </ul>
                   </nav>
                 </div>
 
-                <h1 className='presentation-dev'>FullStack Developer</h1>
+            <div className='contact-container'>
+              <div className='contact-container'> 
+                <div className='linkedin-box'>
+                  <a href='https://www.linkedin.com/in/nicol%C3%A1s-gim%C3%A9nez-cardani-68429b230/' target='_blank' rel='noreferrer'>
+                    <BsLinkedin className='contact-icon linkedin' />
+                  </a>
+                </div>
+                <div className='github-box'>
+                  <a href='https://github.com/Sparx27' target='_blank' rel='noreferrer'>
+                    <BsGithub className='contact-icon github' />
+                  </a>
+                </div>
+                <div className='contact-box'>
+                  <BiLogoGmail className='contact-icon gmail' />
+                </div>
+              </div>
             </div>
+
+            </div>
+
+            
     
           </div>
         ) : (
@@ -41,7 +63,7 @@ function Header({ display }) {
               <ul className='menu-top'>
                 <li><Link className={pathname === '/' ? 'links active' : 'links'} to='/'>About</Link></li>
                 <li><Link className={pathname === '/projects' ? 'links active' : 'links'} to='/projects'>Projects</Link></li>
-                <li><Link className={pathname === '/contact' ? 'links active' : 'links'} to='/contact'>Contact</Link></li>
+                {/* <li><Link className={pathname === '/contact' ? 'links active' : 'links'} to='/contact'>Contact</Link></li> */}
               </ul>
             </div>
           </nav>
