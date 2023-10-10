@@ -83,7 +83,7 @@ h3 {
 .bg-light {
   display: none;
 }
-@media (max-width: 1199px) {
+/* @media (max-width: 1199px) {
   .bg-light {
     display: block;
     position: fixed;
@@ -97,7 +97,7 @@ h3 {
     background-color: var(--color-primary);
     box-shadow: 0 0 7000px 290px rgba(50, 209, 103, 0.09);
   }
-}
+} */
 
 
 
@@ -133,7 +133,7 @@ header {
 }
 @media (max-width: 560px) {
   .header-aside .presentation h2 {
-    font-size: 3.25rem;
+    font-size: 3rem;
   }
 }
 
@@ -159,7 +159,7 @@ header {
 }
 @media (max-width: 560px) {
   .header-aside .presentation h1 {
-    font-size: 5rem;
+    font-size: 4rem;
   }
 }
 
@@ -292,7 +292,7 @@ header {
 
 @media (max-width: 560px) {
   .contact-container {
-    gap: 2rem;
+    gap: 2.25rem;
   }
   .linkedin,
   .github,
