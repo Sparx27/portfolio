@@ -35,13 +35,13 @@ export default function Index() {
         <div className="about-paragraph">
           <h3>Intro</h3>
           <p>        
-            In early 2022, I embarked on my programming journey when I stumbled upon something that truly piqued my interest: an online course titled "JavaScript Algorithms and Data Structures" on freecodecamp.com. Since then, I have been continuously advancing my knowledge in web development. I have achieved this by enrolling in online courses, following tutorials on YouTube, and delving into online documentation. Furthermore, I commenced my formal studies at ORT University Uruguay in August 2023, where I am pursuing a program known as "Analista en Tecnologías de la Información." In addition, I am committed to independently expanding my programming knowledge.
+          In early 2022, my programming journey began when I stumbled upon something that truly piqued my interest: an online course titled "JavaScript Algorithms and Data Structures" on freecodecamp.com. Since then, I have been continuously advancing my knowledge in web development, achieving this by enrolling in online courses, following tutorials on YouTube, and delving into online documentation. Furthermore, commenced my formal studies at ORT University Uruguay in August 2023, pursuing a program known as "Analista en Tecnologías de la Información." In addition, I keep independently expanding my programming knowledge.
           </p>
           <p>
-            I am certain that full-stack development is what I want to do. I enjoy learning about web programming. In essence, I take pleasure in the process of creating functional applications or features for existing projects that truly work.
+            I am certain that full-stack development is what I want to do. In essence, I take pleasure in the process of learning about web programming and creating functional applications or features for existing projects that truly work.
           </p>
           <p>
-            I am 28 years old, born in the USA, and came to live in Uruguay as a child and now reside in Montevideo. My interests are diverse and include philosophy, astronomy, psychology, art (paintings, to be exact) and of course, also love cats (who could resist?). I try to maintain good health by exercising at least four times a week and spending a good amount of time with my loved ones.
+            I am 28 years old, born in the USA, and came to live in Uruguay as a child. I now reside in Montevideo. My interests are diverse and include philosophy, astronomy, psychology, art (paintings, to be exact) and of course, also love cats (who could resist?). Also try to maintain good health by exercising at least four times a week and spending a good amount of time with my loved ones.
           </p>
         </div>
 
