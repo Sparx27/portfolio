@@ -34,14 +34,14 @@ export default function Index() {
         
         <div className="about-paragraph">
           <h3>Intro</h3>
-          <p>
-            In early 2022, while employed as a commercial administrator, I stumbled upon something that truly piqued my interest: an online course titled "JavaScript Algorithms and Data Structures" on freecodecamp.com. Since then, I have been continuously advancing my knowledge in web development. I achieve this by enrolling in courses on Udemy, following tutorials on YouTube, and delving into online documentation.
+          <p>        
+            In early 2022, I embarked on my programming journey when I stumbled upon something that truly piqued my interest: an online course titled "JavaScript Algorithms and Data Structures" on freecodecamp.com. Since then, I have been continuously advancing my knowledge in web development. I have achieved this by enrolling in online courses, following tutorials on YouTube, and delving into online documentation. Furthermore, I commenced my formal studies at ORT University Uruguay in August 2023, where I am pursuing a program known as "Analista en Tecnologías de la Información." In addition, I am committed to independently expanding my programming knowledge.
           </p>
           <p>
-            Now I am certain that full-stack development is what I want to do. I enjoy learning about various aspects, such as code logic, front-end frameworks, backend development involving database integration, exploring new libraries, debugging, and implementing new features within existing projects. In essence, I take pleasure in the process of crafting functional applications or features that truly work. <span id="ort">I began my formal studies at ORT University Uruguay in August 2023, pursuing the program called "Analista en Tecnologías de la Información"</span>. Additionally, I continue to independently expand my programming knowledge.
+            I am certain that full-stack development is what I want to do. I enjoy learning about web programming. In essence, I take pleasure in the process of creating functional applications or features for existing projects that truly work.
           </p>
           <p>
-            My name is Nicolás Giménez, residing in Montevideo, and I am 27 years old. I like a lot of things: philosophy, astronomy, psychology, plants (got a lot in my apartment), cooking, art (paintings, to be exact) and of course, also love cats (who could resist?). I try to maintain good health by exercising at least four times a week and spending a good amount of time with my loved ones.
+            I am 28 years old, born in the USA, and came to live in Uruguay as a child and now reside in Montevideo. My interests are diverse and include philosophy, astronomy, psychology, art (paintings, to be exact) and of course, also love cats (who could resist?). I try to maintain good health by exercising at least four times a week and spending a good amount of time with my loved ones.
           </p>
         </div>
 
