@@ -10,7 +10,7 @@ const MailModal = () => {
         <div className="modal-container">
           <div className="modal-background" onClick={() => setIsActive(!isActive)}></div>
 
-          <div className='modal-content'>
+          <div className={isActive ? 'modal-content modal-active' : 'modal-content'}>
             <h2>Gmail</h2>
             <p>nicolasgcardani@gmail.com</p>
           </div>
