@@ -251,13 +251,11 @@ header {
   overflow: hidden;
 }
 .linkedin:hover {
-  color: rgb(0,102,154);
-  background-color: white;
+  color: #fdfff3;
 }
 @media (max-width: 1200px) {
   .linkedin {
-    color: rgb(0,102,154);
-    background-color: white;
+    color: #fdfff3;
   }
 }
 
@@ -267,13 +265,11 @@ header {
   overflow: hidden;
 }
 .github:hover {
-  color: white;
-  background-color: black;
+  color: #fdfff3;
 }
 @media (max-width: 1200px) {
   .github {
-    color: white;
-    background-color: black;
+    color: #fdfff3;
   }
 }
 
@@ -282,11 +278,11 @@ header {
   font-size: 7rem;
 }
 .gmail:hover {
-  color: rgb(199,41,38);
+  color: #fdfff3;
 }
 @media (max-width: 1200px) {
   .gmail {
-    color: rgb(199,41,38);
+    color: #fdfff3;
   }
 }
 

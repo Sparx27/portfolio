@@ -68,7 +68,7 @@ export const projectsData = [
     title: 'Drinks Finder',
     description: 'Created with React and styled with React-Bootstrap. Find recipes for your drinks!',
     image: drinkFinder,
-    url: 'https://vite-react-styled-components-crypto-quoting-system.vercel.app/'
+    url: 'https://sparx-react-drinkfinder.vercel.app/'
   },
   {
     title: 'Weather App',
