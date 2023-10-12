@@ -1,11 +1,13 @@
 import { Link, useLocation } from '@remix-run/react'
-import myPhoto from '../../public/images/me.jpg'
+import { useContext } from "react"
+import { ModalContext } from '../context/ModalContext'
 import sparxIcon from '../../public/images/sparxIcon.png'
 import { BsLinkedin, BsGithub } from 'react-icons/bs'
 import { BiLogoGmail } from 'react-icons/bi' 
 
 function Header({ display }) {
   const { pathname } = useLocation()
+  const { isActive, setIsActive } = useContext(ModalContext)
 
   return (
     <header className={display}>
@@ -25,33 +27,29 @@ function Header({ display }) {
                     <ul>
                       <li><Link className={pathname === '/' ? 'links active' : 'links'} to='/'>About</Link></li>
                       <li><Link className={pathname === '/projects' ? 'links active' : 'links'} to='/projects'>Projects</Link></li>
-                      {/* <li><Link className={pathname === '/contact' ? 'links active' : 'links'} to='/contact'>Contact</Link></li> */}
                     </ul>
                   </nav>
                 </div>
 
-            <div className='contact-container'>
-              <div className='contact-container'> 
-                <div className='linkedin-box'>
-                  <a href='https://www.linkedin.com/in/nicol%C3%A1s-gim%C3%A9nez-cardani-68429b230/' target='_blank' rel='noreferrer'>
-                    <BsLinkedin className='contact-icon linkedin' />
-                  </a>
+                <div className='contact-container'>
+                  <div className='contact-container'> 
+                    <div className='linkedin-box'>
+                      <a href='https://www.linkedin.com/in/nicol%C3%A1s-gim%C3%A9nez-cardani-68429b230/' target='_blank' rel='noreferrer'>
+                        <BsLinkedin className='contact-icon linkedin' />
+                      </a>
+                    </div>
+                    <div className='github-box'>
+                      <a href='https://github.com/Sparx27' target='_blank' rel='noreferrer'>
+                        <BsGithub className='contact-icon github' />
+                      </a>
+                    </div>
+                    <div className='contact-box'>
+                      <BiLogoGmail className='contact-icon gmail' onClick={() => setIsActive(!isActive)} />
+                    </div>
+                  </div>
                 </div>
-                <div className='github-box'>
-                  <a href='https://github.com/Sparx27' target='_blank' rel='noreferrer'>
-                    <BsGithub className='contact-icon github' />
-                  </a>
-                </div>
-                <div className='contact-box'>
-                  <BiLogoGmail className='contact-icon gmail' />
-                </div>
-              </div>
             </div>
 
-            </div>
-
-            
-    
           </div>
         ) : (
           <nav className='h-top'>
@@ -63,7 +61,6 @@ function Header({ display }) {
               <ul className='menu-top'>
                 <li><Link className={pathname === '/' ? 'links active' : 'links'} to='/'>About</Link></li>
                 <li><Link className={pathname === '/projects' ? 'links active' : 'links'} to='/projects'>Projects</Link></li>
-                {/* <li><Link className={pathname === '/contact' ? 'links active' : 'links'} to='/contact'>Contact</Link></li> */}
               </ul>
             </div>
           </nav>

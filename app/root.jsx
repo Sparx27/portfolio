@@ -6,12 +6,14 @@ import {
   Outlet,
   useLocation
 } from '@remix-run/react'
-import { useEffect, useState } from 'react'
+import { useEffect, useState, useContext } from 'react'
+import ModalProvider, { ModalContext } from './context/ModalContext'
 import icon from '../public/Sfavicon.ico'
 import Header from './components/Header'
 import Footer from './components/Footer'
-
 import styles from '~/styles/index.css'
+import MailModal from './components/MailModal'
+
 
 export function meta() {
   return [
@@ -69,14 +71,19 @@ function Document({ children }) {
         <Links />
       </head>
 
-      <body>
-        <div className={location.pathname.includes('/projects') || location.pathname.includes('/view') ? 'display-full' : 'display-grid'}>
-          <Header display={location.pathname.includes('/projects') || location.pathname.includes('/view') ? 'header-top' : 'header-aside'} />
-          {children}
-          {
-            (location.pathname.includes('/projects') || location.pathname.includes('/view')) && <Footer />
-          }
-        </div>
+      <body style={{position: 'relative'}}>
+        <ModalProvider>
+        <MailModal />
+          <div className={location.pathname.includes('/projects') || location.pathname.includes('/view') ? 'display-full' : 'display-grid'}>
+            <Header display={location.pathname.includes('/projects') || location.pathname.includes('/view') ? 'header-top' : 'header-aside'} />
+            {children}
+            {
+              (location.pathname.includes('/projects') || location.pathname.includes('/view')) && <Footer />
+            }
+          </div>
+          
+          
+        </ModalProvider>
 
         <Scripts />
         <LiveReload />
