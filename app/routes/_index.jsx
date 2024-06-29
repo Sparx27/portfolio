@@ -19,12 +19,12 @@ export default function Index() {
     <section className="about-section">
 
       <div className="container">
-        
+
         <div className="about-paragraph">
           <h3>Intro</h3>
           {
             INTRO_TEXT.map((text, i) => (
-              <p key={i+1500}>{text}</p>
+              <p key={i + 1500} dangerouslySetInnerHTML={{ __html: text }}></p>
             ))
           }
         </div>
