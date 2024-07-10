@@ -6,30 +6,35 @@ function Project({ title, description, image, url }) {
       {
         url.includes('http')
           ? (
-            <a href={url} target='_blank' rel='noreferrer'>
-              <div className='project-box'>
-                <img src={image} alt={`${title}`} />
-        
-                <div className='project-txt'>
-                  <h4>{title}</h4>
-                  <p className='project-description'>{description}</p>
+            <article>
+              <a href={url} target='_blank' rel='noreferrer'>
+                <div className='project-box'>
+                  <img src={image} alt={`${title}`} />
+
+                  <div className='project-txt'>
+                    <h4>{title}</h4>
+                    <p className='project-description'>{description}</p>
+                  </div>
                 </div>
-              </div>
-            </a>
+              </a>
+            </article>
+
           )
           : (
-            <Link to={`/view/${url}`}>
-              <div className='project-box'>
-                <img src={image} alt={`${title}`} />
-        
-                <div className='project-txt'>
-                  <h4>{title}</h4>
-                  <p className='project-description'>{description}</p>
-                </div>
+            <article>
+              <Link to={`/view/${url}`}>
+                <div className='project-box'>
+                  <img src={image} alt={`${title}`} />
 
-                <p className='watch-video'>Watch Video</p>
-              </div>
-            </Link>
+                  <div className='project-txt'>
+                    <h4>{title}</h4>
+                    <p className='project-description'>{description}</p>
+                  </div>
+
+                  <p className='watch-video'>Watch Video</p>
+                </div>
+              </Link>
+            </article>
           )
       }
     </>

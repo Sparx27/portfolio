@@ -328,7 +328,7 @@ header {
   background-color: rgba(0, 0, 0, 0.11);
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
-  transition: .5s all cubic-bezier(0.19, 1, 0.22, 1);
+  transition: .2s all cubic-bezier(0.19, 1, 0.22, 1);
 }
 
 .modal-container {

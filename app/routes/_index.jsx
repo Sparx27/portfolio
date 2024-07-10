@@ -2,8 +2,10 @@ import { INTRO_TEXT } from '../db/introText'
 import { STACK_LIST } from '../db/stackdb'
 import StackBox from '../components/StackBox'
 import githubIcon from '../../public/images/githubIcon.png'
-import JSCertificate from '../../public/images/freecodecamp/JSCertificate.jpg'
+import { CERTIFICATES_LIST } from '../db/certificatesdb'
+import { MdOutlineNavigateBefore, MdOutlineNavigateNext } from "react-icons/md";
 import styles from '~/styles/about.css'
+import { useEffect, useRef, useState } from 'react'
 
 export function links() {
   return [
@@ -15,21 +17,53 @@ export function links() {
 }
 
 export default function Index() {
+  const [certShow, setCertShow] = useState(0)
+  const prevBtnRef = useRef(null)
+  const nextBtnRef = useRef(null)
+
+  function handleNext() {
+    if (certShow < CERTIFICATES_LIST.length - 1) {
+      setCertShow(certShow + 1)
+    }
+  }
+
+  function handlePrev() {
+    if (certShow > 0) {
+      setCertShow(certShow - 1)
+    }
+  }
+
+  useEffect(() => {
+    if (certShow == 0) {
+      prevBtnRef.current.disabled = true
+    }
+    else {
+      prevBtnRef.current.disabled = false
+    }
+
+    if (certShow == CERTIFICATES_LIST.length - 1) {
+      nextBtnRef.current.disabled = true
+    }
+    else {
+      nextBtnRef.current.disabled = false
+    }
+  }, [certShow])
+
   return (
     <section className="about-section">
 
       <div className="container">
 
-        <div className="about-paragraph">
+        <article className="about-paragraph">
           <h3>Intro</h3>
           {
             INTRO_TEXT.map((text, i) => (
               <p key={i + 1500} dangerouslySetInnerHTML={{ __html: text }}></p>
             ))
           }
-        </div>
+        </article>
 
-        <div className="stack">
+        <article className="stack">
           <h3>Stack</h3>
           <div className="stack-container">
             {
@@ -38,10 +72,24 @@ export default function Index() {
               ))
             }
           </div>
-        </div>
+        </article>
 
         <div className='certificates-container'>
-          <img src={JSCertificate} alt='js certificate' />
+          <button
+            ref={prevBtnRef}
+            className='certificates-btn'
+            onClick={handlePrev}><MdOutlineNavigateBefore /></button>
+          <figure>
+            {
+              CERTIFICATES_LIST.map((arr, i) => {
+                return <img key={i + 5328} src={arr[0]} alt={arr[1]} className={(certShow == i ? "certificate-show" : "")} />
+              })
+            }
+          </figure>
+          <button
+            ref={nextBtnRef}
+            className='certificates-btn next'
+            onClick={handleNext}><MdOutlineNavigateNext /></button>
         </div>
 
         <div className='footer-txt about-footer'>
