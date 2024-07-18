@@ -13,6 +13,7 @@ import Header from './components/Header'
 import Footer from './components/Footer'
 import styles from '~/styles/index.css'
 import MailModal from './components/MailModal'
+import { LanguageProvider } from './context/LanguageContext'
 
 
 export function meta() {
@@ -42,14 +43,14 @@ export function links() {
       href: 'https://necolas.github.io/normalize.css/8.0.1/normalize.css'
     },
     {
-			rel: 'preconnect',
-			href: 'https://fonts.googleapis.com'
-		},
-		{
-			rel: 'preconnect',
-			href: 'https://fonts.gstatic.com',
-			corssorigin: 'true'
-		},
+      rel: 'preconnect',
+      href: 'https://fonts.googleapis.com'
+    },
+    {
+      rel: 'preconnect',
+      href: 'https://fonts.gstatic.com',
+      corssorigin: 'true'
+    },
     {
       rel: 'stylesheet',
       href: 'https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;900&family=Poppins:wght@300;400;500;600;900&display=swap'
@@ -71,19 +72,19 @@ function Document({ children }) {
         <Links />
       </head>
 
-      <body style={{position: 'relative'}}>
-        <ModalProvider>
-        <MailModal />
-          <div className={location.pathname.includes('/projects') || location.pathname.includes('/view') ? 'display-full' : 'display-grid'}>
-            <Header display={location.pathname.includes('/projects') || location.pathname.includes('/view') ? 'header-top' : 'header-aside'} />
-            {children}
-            {
-              (location.pathname.includes('/projects') || location.pathname.includes('/view')) && <Footer />
-            }
-          </div>
-          
-          
-        </ModalProvider>
+      <body style={{ position: 'relative' }}>
+        <LanguageProvider>
+          <ModalProvider>
+            <MailModal />
+            <div className={location.pathname.includes('/projects') || location.pathname.includes('/view') ? 'display-full' : 'display-grid'}>
+              <Header display={location.pathname.includes('/projects') || location.pathname.includes('/view') ? 'header-top' : 'header-aside'} />
+              {children}
+              {
+                (location.pathname.includes('/projects') || location.pathname.includes('/view')) && <Footer />
+              }
+            </div>
+          </ModalProvider>
+        </LanguageProvider>
 
         <Scripts />
         <LiveReload />
@@ -105,7 +106,7 @@ export default function App() {
         y: e.clientY
       })
     }
-    
+
     window.addEventListener('mousemove', mouseMove)
 
     return () => {
@@ -115,9 +116,9 @@ export default function App() {
 
   return (
     <Document>
-      <div 
+      <div
         className='cursor'
-        style={{ top: `${mousePosition.y}px`, left: `${mousePosition.x}px`}}
+        style={{ top: `${mousePosition.y}px`, left: `${mousePosition.x}px` }}
       ></div>
       <div className='bg-light'></div>
       <Outlet />

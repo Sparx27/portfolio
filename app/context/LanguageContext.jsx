@@ -1,26 +1,26 @@
 import { createContext, useState } from "react";
-import { es } from "../db/textEs";
 import { en } from "../db/textEn";
+import { es } from "../db/textEs";
 
-const LanguajeContext = createContext()
+const LanguageContext = createContext()
 
-function LanguajeProvider({ children }) {
-  const [lg, setLg] = useState(es)
+function LanguageProvider({ children }) {
+  const [lg, setLg] = useState(en)
 
-  function toggleLanguaje() {
-    if (lg.languaje === "en") {
+  function toggleLanguage() {
+    if (lg.language === "en") {
       setLg(es)
     }
 
-    if (lg.languaje === "es") {
+    if (lg.language === "es") {
       setLg(en)
     }
   }
 
-  const data = { lg, toggleLanguaje }
+  const data = { lg, toggleLanguage }
 
-  return <LanguajeContext.Provider value={data}>{children}</LanguajeContext.Provider>
+  return <LanguageContext.Provider value={data}>{children}</LanguageContext.Provider>
 }
 
-export { LanguajeProvider }
-export default LanguajeContext 
+export { LanguageProvider }
+export default LanguageContext 

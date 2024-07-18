@@ -1,11 +1,11 @@
-import { INTRO_TEXT } from '../db/introText'
 import { STACK_LIST } from '../db/stackdb'
 import StackBox from '../components/StackBox'
 import githubIcon from '../../public/images/githubIcon.png'
 import { CERTIFICATES_LIST } from '../db/certificatesdb'
 import { MdOutlineNavigateBefore, MdOutlineNavigateNext } from "react-icons/md";
 import styles from '~/styles/about.css'
-import { useEffect, useRef, useState } from 'react'
+import { useContext, useEffect, useRef, useState } from 'react'
+import LanguageContext from '../context/LanguageContext'
 
 export function links() {
   return [
@@ -20,6 +20,7 @@ export default function Index() {
   const [certShow, setCertShow] = useState(0)
   const prevBtnRef = useRef(null)
   const nextBtnRef = useRef(null)
+  const { _index } = useContext(LanguageContext).lg
 
   function handleNext() {
     if (certShow < CERTIFICATES_LIST.length - 1) {
@@ -57,7 +58,7 @@ export default function Index() {
         <article className="about-paragraph">
           <h3>Intro</h3>
           {
-            INTRO_TEXT.map((text, i) => (
+            _index.intro.map((text, i) => (
               <p key={i + 1500} dangerouslySetInnerHTML={{ __html: text }}></p>
             ))
           }
@@ -93,7 +94,7 @@ export default function Index() {
         </div>
 
         <div className='footer-txt about-footer'>
-          <p><i>Made with love on Remix Run. Portfolio code:</i></p>
+          <p><i>{_index.portfolio}</i></p>
           <a href='https://github.com/Sparx27/portfolio' target='_blank' rel='noreferrer'>
             <img src={githubIcon} alt='github' />
           </a>

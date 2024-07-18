@@ -3,36 +3,40 @@ import { useContext } from "react"
 import { ModalContext } from '../context/ModalContext'
 import sparxIcon from '../../public/images/sparxIcon.png'
 import { BsLinkedin, BsGithub } from 'react-icons/bs'
-import { BiLogoGmail } from 'react-icons/bi' 
+import { BiLogoGmail } from 'react-icons/bi'
+import LangSwitcher from './LangSwitcher'
+import LanguageContext from '../context/LanguageContext'
 
 function Header({ display }) {
   const { pathname } = useLocation()
   const { isActive, setIsActive } = useContext(ModalContext)
+  const { header } = useContext(LanguageContext).lg
 
   return (
     <header className={display}>
 
-    {
-      display === 'header-aside'
-        ? (
-          <div className='container header-content'>
+      {
+        display === 'header-aside'
+          ? (
+            <div className='container header-content'>
 
-            <div className='presentation'>
+              <div className='presentation'>
                 <h2 className='presentation-name'>Nicolás G. Cardani</h2>
 
-                <h1 className='presentation-dev'>Web Developer</h1>
+                <h1 className='presentation-dev'>{header.prof}</h1>
 
                 <div className='menu'>
                   <nav className='menu-nav'>
                     <ul>
-                      <li><Link className={pathname === '/' ? 'links active' : 'links'} to='/'>About</Link></li>
-                      <li><Link className={pathname === '/projects' ? 'links active' : 'links'} to='/projects'>Projects</Link></li>
+                      <li><Link className={pathname === '/' ? 'links active' : 'links'} to='/'>{header.a1}</Link></li>
+                      <li><Link className={pathname === '/projects' ? 'links active' : 'links'} to='/projects'>{header.a2}</Link></li>
+                      <li><LangSwitcher /></li>
                     </ul>
                   </nav>
                 </div>
 
                 <div className='contact-container'>
-                  <div className='contact-container'> 
+                  <div className='contact-container'>
                     <div className='linkedin-box'>
                       <a href='https://www.linkedin.com/in/nicol%C3%A1s-gim%C3%A9nez-cardani-68429b230/' target='_blank' rel='noreferrer'>
                         <BsLinkedin className='contact-icon linkedin' />
@@ -48,24 +52,26 @@ function Header({ display }) {
                     </div>
                   </div>
                 </div>
-            </div>
 
-          </div>
-        ) : (
-          <nav className='h-top'>
-            <div className='h-top-container'>
-              <Link to='/'>
-                <img src={sparxIcon} alt='sparx icon' />
-              </Link>
+              </div>
 
-              <ul className='menu-top'>
-                <li><Link className={pathname === '/' ? 'links active' : 'links'} to='/'>About</Link></li>
-                <li><Link className={pathname === '/projects' ? 'links active' : 'links'} to='/projects'>Projects</Link></li>
-              </ul>
             </div>
-          </nav>
-        )
-    }
+          ) : (
+            <nav className='h-top'>
+              <div className='h-top-container'>
+                <Link to='/'>
+                  <img src={sparxIcon} alt='sparx icon' />
+                </Link>
+
+                <ul className='menu-top'>
+                  <li><Link className={pathname === '/' ? 'links active' : 'links'} to='/'>{header.a1}</Link></li>
+                  <li><Link className={pathname === '/projects' ? 'links active' : 'links'} to='/projects'>{header.a2}</Link></li>
+                  <li><LangSwitcher /></li>
+                </ul>
+              </div>
+            </nav>
+          )
+      }
 
     </header>
   )
