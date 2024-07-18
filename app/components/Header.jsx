@@ -10,7 +10,8 @@ import LanguageContext from '../context/LanguageContext'
 function Header({ display }) {
   const { pathname } = useLocation()
   const { isActive, setIsActive } = useContext(ModalContext)
-  const { header } = useContext(LanguageContext).lg
+  const { lg } = useContext(LanguageContext)
+  const { header } = lg
 
   return (
     <header className={display}>
@@ -23,7 +24,7 @@ function Header({ display }) {
               <div className='presentation'>
                 <h2 className='presentation-name'>Nicolás G. Cardani</h2>
 
-                <h1 className='presentation-dev'>{header.prof}</h1>
+                <h1 className={lg.language == 'es' ? 'presentation-dev presentation-h1-es' : 'presentation-dev'}>{header.prof}</h1>
 
                 <div className='menu'>
                   <nav className='menu-nav'>
