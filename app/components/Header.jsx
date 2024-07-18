@@ -1,5 +1,5 @@
 import { Link, useLocation } from '@remix-run/react'
-import { useContext } from "react"
+import { useContext, useRef } from "react"
 import { ModalContext } from '../context/ModalContext'
 import sparxIcon from '../../public/images/sparxIcon.png'
 import { BsLinkedin, BsGithub } from 'react-icons/bs'
@@ -12,6 +12,24 @@ function Header({ display }) {
   const { isActive, setIsActive } = useContext(ModalContext)
   const { lg } = useContext(LanguageContext)
   const { header } = lg
+  const linkAsideRef = useRef(null)
+  const linkTopRef = useRef(null)
+
+  function hoverHandlerAside(e) {
+    linkAsideRef.current.classList.remove('active')
+  }
+
+  function outHandlerAside(e) {
+    linkAsideRef.current.classList.add('active')
+  }
+
+  function hoverHandlerTop(e) {
+    linkTopRef.current.classList.remove('active')
+  }
+
+  function outHandlerTop(e) {
+    linkTopRef.current.classList.add('active')
+  }
 
   return (
     <header className={display}>
@@ -29,8 +47,21 @@ function Header({ display }) {
                 <div className='menu'>
                   <nav className='menu-nav'>
                     <ul>
-                      <li><Link className={pathname === '/' ? 'links active' : 'links'} to='/'>{header.a1}</Link></li>
-                      <li><Link className={pathname === '/projects' ? 'links active' : 'links'} to='/projects'>{header.a2}</Link></li>
+                      <li><Link
+                        ref={linkAsideRef}
+                        className={pathname === '/' ? 'links active' : 'links'}
+                        to='/'
+                      >
+                        {header.a1}
+                      </Link></li>
+                      <li><Link
+                        className={pathname === '/projects' ? 'links active' : 'links'}
+                        to='/projects'
+                        onMouseOver={hoverHandlerAside}
+                        onMouseOut={outHandlerAside}
+                      >
+                        {header.a2}
+                      </Link></li>
                       <li><LangSwitcher /></li>
                     </ul>
                   </nav>
@@ -65,8 +96,21 @@ function Header({ display }) {
                 </Link>
 
                 <ul className='menu-top'>
-                  <li><Link className={pathname === '/' ? 'links active' : 'links'} to='/'>{header.a1}</Link></li>
-                  <li><Link className={pathname === '/projects' ? 'links active' : 'links'} to='/projects'>{header.a2}</Link></li>
+                  <li><Link
+                    className={pathname === '/' ? 'links active' : 'links'}
+                    to='/'
+                    onMouseOver={hoverHandlerTop}
+                    onMouseOut={outHandlerTop}
+                  >
+                    {header.a1}
+                  </Link></li>
+                  <li><Link
+                    className={pathname === '/projects' ? 'links active' : 'links'}
+                    to='/projects'
+                    ref={linkTopRef}
+                  >
+                    {header.a2}
+                  </Link></li>
                   <li><LangSwitcher /></li>
                 </ul>
               </div>

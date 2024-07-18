@@ -205,19 +205,21 @@ header {
   /* overflow: hidden; */
 }
 
-.header-aside .menu-nav ul li a,
-.h-top .menu-top li a {
+.links,
+.links {
+  position: relative;
   display: inline-block;
   padding-bottom: 1.5px;
   font-size: 2.3rem;
   font-weight: 600;
   text-decoration: none;
   text-transform: uppercase;
+  color: #cfcfcf;
   transition: .2s all;
 }
 
-.header-aside .menu-nav ul li a:hover,
-.h-top .menu-top li a:hover,
+.links:hover,
+.links:hover,
 .menu-nav .active,
 .menu-top .active {
   transform: scale(1.05);
@@ -225,11 +227,6 @@ header {
   transition:
     transform .4s ease,
     color .4s ease;
-}
-
-.links {
-  position: relative;
-  color: #cfcfcf;
 }
 
 .links::after {
