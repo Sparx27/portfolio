@@ -1,6 +1,10 @@
 import { Link } from '@remix-run/react'
+import { useContext } from 'react'
+import LanguageContext from '../context/LanguageContext'
 
 function Project({ title, description, image, url }) {
+  const { projects } = useContext(LanguageContext).lg
+
   return (
     <>
       {
@@ -31,7 +35,7 @@ function Project({ title, description, image, url }) {
                     <p className='project-description'>{description}</p>
                   </div>
 
-                  <p className='watch-video'>Watch Video</p>
+                  <p className='watch-video'>{projects.watchTxt}</p>
                 </div>
               </Link>
             </article>

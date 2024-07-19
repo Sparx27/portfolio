@@ -8,7 +8,6 @@ import MERNTasksManager from '../../public/images/projects/MERN-tasks-manager.pn
 import webx from '../../public/images/projects/webx.png'
 import MERNInventoryApp from '../../public/images/projects/MERN-inventory-app.png'
 import cryptoQuotingSystem from '../../public/images/projects/crypto-quoting-system.png'
-import vetPatients from '../../public/images/projects/vet-patients.png'
 import expensePlanner from '../../public/images/projects/expense-planner.png'
 import MERNNotesApp from '../../public/images/projects/MERN-notes-app.png'
 import drinkFinder from '../../public/images/projects/drink-finder.png'
@@ -17,7 +16,7 @@ import weatherApp from '../../public/images/projects/weather-app.png'
 
 
 export const projectsData = [
-    {
+  {
     title: 'MERN Notes App',
     description: 'This was my first full-stack project made using MERN Stack and styled with CSS and Bootstrap. Special thanks to midudev and Full Stack Open for the online course.',
     image: MERNNotesApp,

@@ -1,6 +1,8 @@
+import { useContext } from 'react'
 import Project from '../components/Project'
 import { projectsData } from '../db/projects'
 import styles from '~/styles/projects.css'
+import LanguageContext from '../context/LanguageContext'
 
 export function meta() {
   return [
@@ -20,19 +22,20 @@ export function links() {
 }
 
 function Projects() {
+  const { projects } = useContext(LanguageContext).lg
 
   return (
     <section className='projects-section'>
       <div className='container projects-content'>
-        <h3>Projects</h3>
+        <h3>{projects.t1}</h3>
 
         <div className='projects-container'>
           {
-            projectsData.map((project, i) => {
-              return <Project 
-                key={i} 
-                title={project.title} 
-                description={project.description} 
+            projects.projectsList.map((project, i) => {
+              return <Project
+                key={i}
+                title={project.title}
+                description={project.description}
                 image={project.image}
                 url={project.url}
               />

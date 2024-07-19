@@ -1,6 +1,8 @@
 import { useLocation } from "@remix-run/react"
 import { projectsData } from "../db/projects"
 import styles from '~/styles/projects.css'
+import { useContext } from "react"
+import LanguageContext from "../context/LanguageContext"
 
 export function meta() {
   return [
@@ -20,9 +22,10 @@ export function links() {
 }
 
 function ProjectFull() {
+  const { projects } = useContext(LanguageContext).lg
   const location = useLocation()
   const toFilter = location.pathname.substring(6)
-  const project = projectsData.filter(p => p.url === toFilter)[0]
+  const project = projects.projectsList.filter(p => p.url === toFilter)[0]
 
   return (
     <div className="container">
@@ -43,7 +46,7 @@ function ProjectFull() {
         </div>
 
         <div className="project-links">
-          <h4>Feel free to check out the code:</h4>
+          <h4>{projects.linksTxt}</h4>
           {
             project.backend && <p>Backend: <a href={project.backend} target="_blank" rel="noreferrer">{project.backend}</a></p>
           }
@@ -53,7 +56,7 @@ function ProjectFull() {
           {
             project.monorepo && <p>Monorepo: <a href={project.monorepo} target="_blank" rel="noreferrer">{project.monorepo}</a></p>
           }
-          
+
         </div>
       </div>
     </div>
