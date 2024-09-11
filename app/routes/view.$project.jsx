@@ -1,7 +1,7 @@
 import { useLocation } from "@remix-run/react"
 import { projectsData } from "../db/projects"
 import styles from '~/styles/projects.css'
-import { useContext } from "react"
+import React, { useContext } from "react"
 import LanguageContext from "../context/LanguageContext"
 
 export function meta() {
@@ -27,11 +27,21 @@ function ProjectFull() {
   const toFilter = location.pathname.substring(6)
   const project = projects.projectsList.filter(p => p.url === toFilter)[0]
 
+  function renderDescription(description) {
+    // Reemplaza los saltos de línea \n con <br />
+    return description.split('\n').map((item, index) => (
+      <React.Fragment key={index}>
+        {item}
+        {index < description.split('\n').length - 1 && <><br /><br /></>}
+      </React.Fragment>
+    ));
+  }
+
   return (
     <div className="container">
       <div className="project-presentation">
         <h3>{project.title}</h3>
-        <p className="description">{project.description}</p>
+        <p className="description">{renderDescription(project.description)}</p>
 
         <div className="iframe" dangerouslySetInnerHTML={{ __html: project.video }} />
 
@@ -56,8 +66,16 @@ function ProjectFull() {
           {
             project.monorepo && <p>Monorepo: <a href={project.monorepo} target="_blank" rel="noreferrer">{project.monorepo}</a></p>
           }
-
         </div>
+
+        {
+          project.imageMuestras && <div className="muestras-container">
+            {
+              project.imageMuestras.map((image, index) => <img key={2522 + index} src={image} alt="imagenes de muestra" />)
+            }
+          </div>
+        }
+
       </div>
     </div>
   )

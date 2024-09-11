@@ -16,6 +16,12 @@ import weatherApp from '../../public/images/projects/weather-app.png'
 
 
 export const projectsData = [
+  /* 
+    {
+      title: 'Preguntame.com',
+      description:
+    }
+  */
   {
     title: 'MERN Notes App',
     description: 'This was my first full-stack project made using MERN Stack and styled with CSS and Bootstrap. Special thanks to midudev and Full Stack Open for the online course.',

@@ -12,6 +12,11 @@ import expensePlanner from '../../public/images/projects/expense-planner.png'
 import MERNNotesApp from '../../public/images/projects/MERN-notes-app.png'
 import drinkFinder from '../../public/images/projects/drink-finder.png'
 import weatherApp from '../../public/images/projects/weather-app.png'
+import preguntameapp from '../../public/images/projects/preguntameapp.png'
+import preguntameapp1 from '../../public/images/projects/preguntameapp1.png'
+import preguntameapp2 from '../../public/images/projects/preguntameapp2.png'
+import preguntameapp3 from '../../public/images/projects/preguntameapp3.png'
+import preguntameapp4 from '../../public/images/projects/preguntameapp4.png'
 
 
 export const es = {
@@ -33,6 +38,17 @@ export const es = {
     linksTxt: 'Links de mi código:',
     watchTxt: 'Ver Vídeo',
     projectsList: [
+      {
+        title: 'Preguntame.com',
+        description: 'Proyecto Full-stack desarrollado con SQL Server, ASP.NET 8 Web API en el backend y React en el frontend. Es una red social que permite a los usuarios registrarse, personalizar sus perfiles (incluyendo la opción de agregar o cambiar su foto de perfil) e interactuar mediante el envío de preguntas. Estas pueden ser enviadas desde un usuario hacia otro usuario, o de forma anónima, y las respuestas se muestran en el perfil del usuario receptor. Estas respuestas a su vez pueden recibir "likes" de otros usuarios, y la aplicación cuenta con una función de búsqueda para encontrar y acceder a los perfiles de otros miembros.\nLa gestión de sesiones se realiza mediante JSON Web Tokens (JWT) utilizando cookies HttpOnly, asegurando que el token no sea accesible desde el frontend y las contraseñas se encriptan antes de ser almacenadas en la base de datos. Además, implementé yo mismo el enrutado de la Single Page Application (SPA) en el frontend, incluyendo rutas protegidas, rutas con parámetros de consulta (queries) y funcionalidades adicionales, como la recepción de notificaciones mientras el usuario navega por la aplicación.\nEl diseño es completamente responsivo, y en su mayoría está realizado con CSS propio, aunque integré algunas clases de Bootstrap para agilizar el desarrollo.',
+        image: preguntameapp,
+        imageMuestras: [preguntameapp1, preguntameapp2, preguntameapp3, preguntameapp4],
+        url: 'preguntameApp',
+        video: '<iframe width="560" height="315" src="https://www.youtube.com/embed/q9FdjuWJxJI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+        stack: ['SQL Server', 'C#', 'React', 'Bootstrap'],
+        backend: 'https://github.com/Sparx27/PreguntameAPIv3',
+        frontend: 'https://github.com/Sparx27/PreguntameAppv3'
+      },
       {
         title: 'MERN Inventory App',
         description: 'Proyecto Full-stack hecho con el stack MERN, Cloudinary para el almacenamiento de imágenes y estilizado con SASS. Esta aplicación tiene varias funciones, como el registro de usuarios (con bcrypt para encriptar contraseñas en la base de datos), la capacidad de cambiar su contraseña y la funcionalidad de restablecimiento de contraseña en caso de que la olviden. También utiliza jsonwebtoken para mantener a los usuarios conectados, y con nodemailer, el usuario puede reportar un error directamente a mi correo electrónico desde la aplicación. Nodemailer también se utiliza para enviar el token de restablecimiento de contraseña si un usuario lo olvida. Los usuarios pueden agregar artículos a su inventario con imágenes, descripciones, cantidades, precios y una descripción utilizando un editor de texto enriquecido.',

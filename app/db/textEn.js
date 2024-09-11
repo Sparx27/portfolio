@@ -12,7 +12,11 @@ import expensePlanner from '../../public/images/projects/expense-planner.png'
 import MERNNotesApp from '../../public/images/projects/MERN-notes-app.png'
 import drinkFinder from '../../public/images/projects/drink-finder.png'
 import weatherApp from '../../public/images/projects/weather-app.png'
-
+import preguntameapp from '../../public/images/projects/preguntameapp.png'
+import preguntameapp1 from '../../public/images/projects/preguntameapp1.png'
+import preguntameapp2 from '../../public/images/projects/preguntameapp2.png'
+import preguntameapp3 from '../../public/images/projects/preguntameapp3.png'
+import preguntameapp4 from '../../public/images/projects/preguntameapp4.png'
 
 export const en = {
   language: 'en',
@@ -33,6 +37,17 @@ export const en = {
     linksTxt: 'Feel free to check out the code:',
     watchTxt: 'Watch Video',
     projectsList: [
+      {
+        title: 'Preguntame.com',
+        description: 'Full-stack project developed with SQL Server, ASP.NET 8 Web API on the backend, and React on the frontend. It is a social network that allows users to register, customize their profiles (including the option to add or change their profile picture), and interact by sending questions. These can be sent from one user to another or anonymously, and the answers are displayed on the recipient\'s profile. These answers can, in turn, receive "likes" from other users, and the application features a search function to find and access other members\' profiles.\nSession management is handled using JSON Web Tokens (JWT) with HttpOnly cookies, ensuring that the token is not accessible from the frontend, and passwords are encrypted before being stored in the database. Additionally, I personally implemented the routing for the Single Page Application (SPA) on the frontend, including protected routes, query parameter routes, and additional features such as receiving notifications while navigating through the application.\nThe design is fully responsive and mostly done with custom CSS, though I integrated some Bootstrap classes to speed up development.',
+        image: preguntameapp,
+        imageMuestras: [preguntameapp1, preguntameapp2, preguntameapp3, preguntameapp4],
+        url: 'preguntameApp',
+        video: '<iframe width="560" height="315" src="https://www.youtube.com/embed/q9FdjuWJxJI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+        stack: ['SQL Server', 'C#', 'React', 'Bootstrap'],
+        backend: 'https://github.com/Sparx27/PreguntameAPIv3',
+        frontend: 'https://github.com/Sparx27/PreguntameAppv3'
+      },
       {
         title: 'MERN Inventory App',
         description: 'Full-stack project built with the MERN stack, Cloudinary for image storage, and styled with SASS. This application includes several features, such as user registration (with bcrypt for encrypting passwords in the database), the ability to change their password, and password reset functionality in case they forget it. It also uses jsonwebtoken to keep users logged in, and with nodemailer, users can report an error directly to my email from the application. Nodemailer is also used to send the password reset token if a user forgets it. Users can add items to their inventory with images, descriptions, quantities, prices, and a description using a rich text editor.',
