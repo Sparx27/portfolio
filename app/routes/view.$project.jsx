@@ -1,5 +1,4 @@
 import { useLocation } from "@remix-run/react"
-import { projectsData } from "../db/projects"
 import styles from '~/styles/projects.css'
 import React, { useContext } from "react"
 import LanguageContext from "../context/LanguageContext"

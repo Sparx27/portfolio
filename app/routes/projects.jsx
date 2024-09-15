@@ -1,6 +1,5 @@
 import { useContext } from 'react'
 import Project from '../components/Project'
-import { projectsData } from '../db/projects'
 import styles from '~/styles/projects.css'
 import LanguageContext from '../context/LanguageContext'
 
