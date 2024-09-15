@@ -26,7 +26,7 @@ function Project({ title, description, image, url }) {
           )
           : (
             <article>
-              <Link to={`/view/${url}`}>
+              <Link to={`/view/${url}`} onClick={() => window.scrollTo(0, 0)}>
                 <div className='project-box'>
                   <img src={image} alt={`${title}`} />
 

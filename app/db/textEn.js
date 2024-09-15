@@ -108,31 +108,16 @@ export const en = {
         url: 'https://sparx-webx.netlify.app'
       },
       {
+        title: 'DOM BOM Crafs',
+        description: 'This project was created to study and learn about the DOM and BOM (Browser Object Model), as well as how to manipulate them using JavaScript.',
+        image: dombomCrafts,
+        url: 'https://dombom-crafts.netlify.app/'
+      },
+      {
         title: 'Easybank',
         description: 'Static site created to improve my CSS and HTML structure',
         image: easybank,
         url: 'https://sparx-easybank.netlify.app'
-      },
-      {
-        title: 'MERN Tasks Manager',
-        description: 'Simple full-stack app built in a monorepo architecture (both frontend and backend in the same repository) using Node.js + Express on the backend, MongoDB + Mongoose for the database, React on the frontend and styled with SASS using the 7-1 pattern architecture.',
-        image: MERNTasksManager,
-        url: 'merntasksmanager',
-        video: '<iframe width="560" height="315" src="https://www.youtube.com/embed/X6C-7VpEwUo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
-        stack: ['Node.js', 'MongoDB', 'React', 'SASS'],
-        monorepo: 'https://github.com/Sparx27/MERN-tasks-manager-monorepo/tree/master'
-      },
-      {
-        title: 'SASS Restaurant',
-        description: 'Static site styled with SASS using the 7-1 pattern architecture.',
-        image: sassRestaurant,
-        url: 'https://sparx-sass-restaurant.onrender.com'
-      },
-      {
-        title: 'DOM BOM Crafs',
-        description: 'This project was created to study and learn about the DOM and BOM, as well as how to manipulate them using JavaScript.',
-        image: dombomCrafts,
-        url: 'https://dombom-crafts.netlify.app/'
       },
       {
         title: 'Mate Page',

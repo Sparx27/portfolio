@@ -51,6 +51,7 @@ function Header({ display }) {
                         ref={linkAsideRef}
                         className={pathname === '/' ? 'links active' : 'links'}
                         to='/'
+                        onClick={() => window.scrollTo(0, 0)}
                       >
                         {header.a1}
                       </Link></li>
@@ -59,6 +60,7 @@ function Header({ display }) {
                         to='/projects'
                         onMouseOver={hoverHandlerAside}
                         onMouseOut={outHandlerAside}
+                        onClick={() => window.scrollTo(0, 0)}
                       >
                         {header.a2}
                       </Link></li>
@@ -101,6 +103,7 @@ function Header({ display }) {
                     to='/'
                     onMouseOver={hoverHandlerTop}
                     onMouseOut={outHandlerTop}
+                    onClick={() => window.scrollTo(0, 0)}
                   >
                     {header.a1}
                   </Link></li>
@@ -108,6 +111,7 @@ function Header({ display }) {
                     className={pathname === '/projects' ? 'links active' : 'links'}
                     to='/projects'
                     ref={linkTopRef}
+                    onClick={() => window.scrollTo(0, 0)}
                   >
                     {header.a2}
                   </Link></li>
