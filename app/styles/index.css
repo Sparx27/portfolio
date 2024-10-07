@@ -31,8 +31,14 @@ section {
   background-color: var(--color-bg);
 }
 
+@media (min-width:1100px) {
+  h3 {
+    font-size: 3.7rem;
+  }
+}
+
 h3 {
-  font-size: 3.7rem;
+  font-size: 3rem;
   margin-bottom: 2rem;
   color: var(--color-primary);
   letter-spacing: .8px;
