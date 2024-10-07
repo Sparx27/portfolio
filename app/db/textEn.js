@@ -32,7 +32,7 @@ export const en = {
   projects: {
     t1: 'Projects',
     linksTxt: 'Feel free to check out the code:',
-    watchTxt: 'Watch Video',
+    watchTxt: 'Watch More',
     goToPage: 'Project Link',
     projectsList: [
       {

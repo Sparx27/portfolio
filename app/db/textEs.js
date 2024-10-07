@@ -33,7 +33,7 @@ export const es = {
   projects: {
     t1: 'Proyectos',
     linksTxt: 'Links de mi código:',
-    watchTxt: 'Ver Vídeo',
+    watchTxt: 'Ver Más',
     goToPage: 'Link al Proyecto',
     projectsList: [
       {
