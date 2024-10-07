@@ -2,7 +2,7 @@ import { Link } from '@remix-run/react'
 import { useContext } from 'react'
 import LanguageContext from '../context/LanguageContext'
 
-function Project({ title, description, image, url }) {
+function Project({ title, description, image, url, stack }) {
   const { projects } = useContext(LanguageContext).lg
 
   return (
@@ -17,8 +17,15 @@ function Project({ title, description, image, url }) {
 
                   <div className='project-txt'>
                     <h4>{title}</h4>
+                    <div className='project-stack-box'>
+                      {
+                        stack.map((txt, i) => <p key={i + 12500}>{txt}</p>)
+                      }
+                    </div>
                     <p className='project-description'>{description}</p>
                   </div>
+
+                  <p className='watch-video'>{projects.goToPage}</p>
                 </div>
               </a>
             </article>
@@ -32,6 +39,11 @@ function Project({ title, description, image, url }) {
 
                   <div className='project-txt'>
                     <h4>{title}</h4>
+                    <div className='project-stack-box'>
+                      {
+                        stack.map((txt, i) => <p key={i + 12500}>{txt}</p>)
+                      }
+                    </div>
                     <p className='project-description'>{description}</p>
                   </div>
 
