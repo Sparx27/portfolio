@@ -25,7 +25,7 @@ export const en = {
   _index: {
     intro: [
       'At the beginning of 2022, my journey in programming began when I stumbled upon something that truly sparked my interest: an online course titled "JavaScript Algorithms and Data Structures" on freecodecamp.com. Since then, I have been continuously advancing my knowledge in web development through reading and practicing documentation and learning in online courses from various platforms. Additionally, <span class="text-decoration-underline">I began my formal studies at ORT University Uruguay in August 2023, pursuing a degree in "Information Technology Analyst"</span>. I continue to independently expand my programming knowledge while pursuing my formal studies.',
-      'I am 29 years old, born in the United States, and moved to Uruguay when I was a child. I now reside in Montevideo. My interests are diverse and include philosophy, psychology, sports, and natural places. I am a responsible person, enjoy group activities, and have a desire to learn new technologies and techniques for programming.'
+      'I was born in the United States and moved to Uruguay when I was a child. I now live in Montevideo. My interests are diverse and include sports, philosophy, psychology, and visual arts. I am a responsible person and I greatly enjoy the process of improving day by day by practicing and learning new techniques, concepts, and technologies to become a better developer.'
     ],
     portfolio: 'Made with dedication on Remix Run. Portfolio code:'
   },
@@ -37,12 +37,13 @@ export const en = {
     projectsList: [
       {
         title: 'Preguntame.com',
-        description: 'Social network that allows users to register, customize their profiles (including the option to add or change their profile picture), and interact by sending questions. These can be sent from one user to another or anonymously, and the answers are displayed on the recipient\'s profile. These answers can, in turn, receive "likes" from other users, and the application features a search function to find and access other members\' profiles.\nSession management is handled using JSON Web Tokens (JWT) with HttpOnly cookies, ensuring that the token is not accessible from the frontend, and passwords are encrypted before being stored in the database. Additionally, I personally implemented the routing for the Single Page Application (SPA) on the frontend, including protected routes, query parameter routes, and additional features such as receiving notifications while navigating through the application.\nThe design is fully responsive and mostly done with custom CSS, though I integrated some Bootstrap classes to speed up development.',
+        description: 'Social network that allows users to register, customize their profiles (including the option to add or change their profile picture), and interact by sending questions. These can be sent from one user to another or anonymously, and the answers are displayed on the recipient\'s profile. These answers can, in turn, receive "likes" from other users, and the application features a search function to find and access other members\' profiles.\nSession management is handled using JSON Web Tokens (JWT) with HttpOnly cookies, ensuring that the token is not accessible from the frontend, and passwords are encrypted before being stored in the database. Additionally, I personally implemented the routing for the Single Page Application (SPA) on the frontend, including protected routes, query parameter routes, and additional features such as receiving notifications while navigating through the application.\nThe design is fully responsive and mostly done with custom CSS, though I integrated some Bootstrap classes to speed up development.\nI developed the database in a solution in SQL Server Management, which is in the 3rd normal form and implements Types, Stored Procedures, Functions, and Triggers.',
         image: preguntameapp,
         imageMuestras: [preguntameapp1, preguntameapp2, preguntameapp3, preguntameapp4],
         url: 'preguntameApp',
         video: '<iframe width="560" height="315" src="https://www.youtube.com/embed/q9FdjuWJxJI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
         stack: ['C#', 'SQL Server', 'React', 'Bootstrap'],
+        database: 'https://github.com/Sparx27/preguntameDBv2',
         backend: 'https://github.com/Sparx27/PreguntameAPIv3',
         frontend: 'https://github.com/Sparx27/PreguntameAppv3'
       },

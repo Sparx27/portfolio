@@ -57,6 +57,9 @@ function ProjectFull() {
         <div className="project-links">
           <h4>{projects.linksTxt}</h4>
           {
+            project.database && <p>Database: <a href={project.database} target="_blank" rel="noreferrer">{project.database}</a></p>
+          }
+          {
             project.backend && <p>Backend: <a href={project.backend} target="_blank" rel="noreferrer">{project.backend}</a></p>
           }
           {

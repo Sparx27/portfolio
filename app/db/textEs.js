@@ -26,7 +26,7 @@ export const es = {
   _index: {
     intro: [
       'A principios de 2022, comenzó mi viaje en la programación, cuando me topé con algo que realmente despertó mi interés: un curso en línea titulado "JavaScript Algorithms and Data Structures" en freecodecamp.com. Desde entonces, he estado avanzando continuamente en mis conocimientos en desarrollo web, a través de la lectura y puesta en práctica de documentación y participando en cursos en línea de distintas plataformas. Además, <span class="text-decoration-underline">comencé mis estudios formales en la Universidad ORT Uruguay en agosto de 2023, cursando la carrera "Analista en Tecnologías de la Información"</span>. Actualmente continúo expandiendo de forma independiente mis conocimientos en programación mientras curso mis estudios formales.',
-      'Tengo 29 años, nací en los Estados Unidos y vine a vivir a Uruguay cuando era niño. Ahora resido en Montevideo. Mis intereses son diversos e incluyen el deporte, la filosofía, la psicología y las artes visuales. Soy una persona responsable, me gustan las actividades en grupo y disfruto mucho de aprender tecnologías y técnicas nuevas para programar.'
+      'Nací en los Estados Unidos y vine a vivir a Uruguay cuando era niño. Ahora resido en Montevideo. Mis intereses son diversos e incluyen el deporte, la filosofía, la psicología y las artes visuales. Soy una persona responsable y disfruto mucho del proceso de mejorar día a día practicando y aprendiendo nuevas técnicas, conceptos y tecnologías para ser cada vez un mejor desarrollador.'
     ],
     portfolio: 'Hecho con dedicación en Remix Run. Código del Portfolio:'
   },
@@ -37,13 +37,14 @@ export const es = {
     goToPage: 'Link al Proyecto',
     projectsList: [
       {
-        title: 'Preguntame.com',
-        description: 'Red social que permite a los usuarios registrarse, personalizar sus perfiles (incluyendo la opción de agregar o cambiar su foto de perfil) e interactuar mediante el envío de preguntas. Estas pueden ser enviadas desde un usuario hacia otro usuario, o de forma anónima, y las respuestas se muestran en el perfil del usuario receptor. Estas respuestas a su vez pueden recibir "likes" de otros usuarios, y la aplicación cuenta con una función de búsqueda para encontrar y acceder a los perfiles de otros miembros.\nLa gestión de sesiones se realiza mediante JSON Web Tokens (JWT) utilizando cookies HttpOnly, asegurando que el token no sea accesible desde el frontend y las contraseñas se encriptan antes de ser almacenadas en la base de datos. Además, implementé yo mismo el enrutado de la Single Page Application (SPA) en el frontend, incluyendo rutas protegidas, rutas con parámetros de consulta (queries) y funcionalidades adicionales, como la recepción de notificaciones mientras el usuario navega por la aplicación.\nEl diseño es completamente responsivo, y en su mayoría está realizado con CSS propio, aunque integré algunas clases de Bootstrap para agilizar el desarrollo.',
+        title: 'Preguntame.com (Beta)',
+        description: 'Red social que permite a los usuarios registrarse, personalizar sus perfiles (incluyendo la opción de agregar o cambiar su foto de perfil) e interactuar mediante el envío de preguntas. Estas pueden ser enviadas desde un usuario hacia otro usuario, o de forma anónima, y las respuestas se muestran en el perfil del usuario receptor. Estas respuestas a su vez pueden recibir "likes" de otros usuarios, y la aplicación cuenta con una función de búsqueda para encontrar y acceder a los perfiles de otros miembros.\nLa gestión de sesiones se realiza mediante JSON Web Tokens (JWT) utilizando cookies HttpOnly, asegurando que el token no sea accesible desde el frontend y las contraseñas se encriptan antes de ser almacenadas en la base de datos. Además, implementé yo mismo el enrutado de la Single Page Application (SPA) en el frontend, incluyendo rutas protegidas, rutas con parámetros de consulta (queries) y funcionalidades adicionales, como la recepción de notificaciones mientras el usuario navega por la aplicación.\nEl diseño es completamente responsivo, y en su mayoría está realizado con CSS propio, aunque integré algunas clases de Bootstrap para agilizar el desarrollo.\nLa base de datos la desarrollé en una solución en SQL Server Management la cual está en 3ra forma normal e implementa Types, Stored Procedures, Functions y Triggers.',
         image: preguntameapp,
         imageMuestras: [preguntameapp1, preguntameapp2, preguntameapp3, preguntameapp4],
         url: 'preguntameApp',
         video: '<iframe width="560" height="315" src="https://www.youtube.com/embed/q9FdjuWJxJI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
         stack: ['C#', 'SQL Server', 'React', 'Bootstrap'],
+        database: 'https://github.com/Sparx27/preguntameDBv2',
         backend: 'https://github.com/Sparx27/PreguntameAPIv3',
         frontend: 'https://github.com/Sparx27/PreguntameAppv3'
       },
