@@ -72,7 +72,7 @@ function Header({ display }) {
                 <div className='contact-container'>
                   <div className='contact-container'>
                     <div className='linkedin-box'>
-                      <a href='https://www.linkedin.com/in/nicol%C3%A1s-gim%C3%A9nez-cardani-68429b230/' target='_blank' rel='noreferrer'>
+                      <a href='https://www.linkedin.com/in/gcnicolas2024/' target='_blank' rel='noreferrer'>
                         <BsLinkedin className='contact-icon linkedin' />
                       </a>
                     </div>
