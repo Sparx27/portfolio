@@ -6,11 +6,13 @@ import ucss from '../../public/images/certificates/ucss.webp'
 import umern from '../../public/images/certificates/umern.webp'
 import ucsharp from '../../public/images/certificates/ucsharp.png'
 import apicsharp from '../../public/images/certificates/apicsharp.png'
+import sqlserver from '../../public/images/certificates/sqlserver.webp'
 
 
 export const CERTIFICATES_LIST = [
   [escolaridad, 'Average grade'],
   [firstcertificate, 'First Certificate in English'],
+  [sqlserver, 'U SQL Server Certificate'],
   [apicsharp, 'U .NET Web API Certificate'],
   [ucsharp, 'U .NET Certificate'],
   [ucss, 'U Web Design Certificate'],
