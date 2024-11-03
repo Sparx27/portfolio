@@ -40,7 +40,7 @@ function ProjectFull() {
     <div className="container">
       <div className="project-presentation">
         <h3>{project.title}</h3>
-        <p className="description">{renderDescription(project.description)}</p>
+        <p className="description" dangerouslySetInnerHTML={{ __html: project.description }}></p>
 
         <div className="iframe" dangerouslySetInnerHTML={{ __html: project.video }} />
 
