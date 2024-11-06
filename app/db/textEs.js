@@ -24,9 +24,11 @@ export const es = {
     a2: 'Proyectos'
   },
   _index: {
+    /*
+    Luego en 2023, donde ya tenía claro que realmente me gustaba esta profesión, decidí comenzar la carrera Analista en Tecnologías de la Información en la Universidad ORT.
+    */
     intro: [
-      'A principios de 2022, comenzó mi viaje en la programación, cuando me topé con algo que realmente despertó mi interés: un curso en línea titulado "JavaScript Algorithms and Data Structures" en freecodecamp.com. Desde entonces, he estado avanzando continuamente en mis conocimientos en desarrollo web, a través de la lectura y puesta en práctica de documentación y participando en cursos en línea de distintas plataformas. Además, <span class="text-decoration-underline">comencé mis estudios formales en la Universidad ORT Uruguay en agosto de 2023, cursando la carrera "Analista en Tecnologías de la Información"</span>. Actualmente continúo expandiendo de forma independiente mis conocimientos en programación mientras curso mis estudios formales.',
-      'Nací en los Estados Unidos y vine a vivir a Uruguay cuando era niño. Ahora resido en Montevideo. Mis intereses son diversos e incluyen el deporte, la filosofía, la psicología y las artes visuales. Soy una persona responsable y disfruto mucho del proceso de mejorar día a día practicando y aprendiendo nuevas técnicas, conceptos y tecnologías para ser cada vez un mejor desarrollador.'
+      'A mediados de 2022, di mis primeros pasos en el mundo de la programación cuando me topé con un curso llamado "JavaScript Algorithms and Data Structures", en freecodecamp.com. Desde entonces he estado avanzando continuamente en mis conocimientos en desarrollo web, aprendiendo a través de documentación y participando en distintos cursos en línea. En 2023, teniendo claro que realmente me gustaba esta profesión, <span class="text-decoration-underline">comencé mis estudios formales en la Universidad ORT Uruguay, cursando la carrera "Analista en Tecnologías de la Información"</span>.<br /><br />Desde mis comienzos hasta hoy, siempre intento llevar a la práctica lo que voy aprendiendo, por lo que he trabajo en distintos proyectos personales para que además de consolidar lo que voy aprendiendo, ir desarrollando una mejor lógica y también una mayor creatividad para resolver problemas.'
     ],
     portfolio: 'Hecho con dedicación en Remix Run. Código del Portfolio:'
   },

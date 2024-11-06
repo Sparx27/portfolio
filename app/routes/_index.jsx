@@ -4,7 +4,7 @@ import githubIcon from '../../public/images/githubIcon.png'
 import { CERTIFICATES_LIST } from '../db/certificatesdb'
 import { MdOutlineNavigateBefore, MdOutlineNavigateNext } from "react-icons/md";
 import styles from '~/styles/about.css'
-import { useContext, useEffect, useRef, useState } from 'react'
+import React, { useContext, useEffect, useRef, useState } from 'react'
 import LanguageContext from '../context/LanguageContext'
 
 export function links() {

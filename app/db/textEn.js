@@ -24,8 +24,7 @@ export const en = {
   },
   _index: {
     intro: [
-      'At the beginning of 2022, my journey in programming began when I stumbled upon something that truly sparked my interest: an online course titled "JavaScript Algorithms and Data Structures" on freecodecamp.com. Since then, I have been continuously advancing my knowledge in web development through reading and practicing documentation and learning in online courses from various platforms. Additionally, <span class="text-decoration-underline">I began my formal studies at ORT University Uruguay in August 2023, pursuing a degree in "Information Technology Analyst"</span>. I continue to independently expand my programming knowledge while pursuing my formal studies.',
-      'I was born in the United States and moved to Uruguay when I was a child. I now live in Montevideo. My interests are diverse and include sports, philosophy, psychology, and visual arts. I am a responsible person and I greatly enjoy the process of improving day by day by practicing and learning new techniques, concepts, and technologies to become a better developer.'
+      'In mid-2022, I took my first steps into the world of programming when I came across a course called "JavaScript Algorithms and Data Structures" on freecodecamp.com. Since then, I have been continuously advancing my knowledge in web development, learning through documentation and participating in various online courses. In 2023, certain that I truly enjoyed this profession, <span class="text-decoration-underline">I began my formal studies at ORT University Uruguay, pursuing a degree in "Information Technology Analyst"</span>.<br /><br />From the beginning, I have always tried to put what I learn into practice working on various personal projects. This approach not only helps me to consolidate my knowledge but also enhances my logic and creativity in problem-solving.'
     ],
     portfolio: 'Made with dedication on Remix Run. Portfolio code:'
   },
