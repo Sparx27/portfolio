@@ -1,4 +1,4 @@
-import escolaridad from '../../public/images/certificates/escolaridad.png'
+import escolaridad from '../../public/images/certificates/escolaridad.jpg'
 import firstcertificate from '../../public/images/certificates/firstcertificate.jpg'
 import fccjs from '../../public/images/certificates/fccjs.webp'
 import fccrwd from '../../public/images/certificates/fccrwd.webp'
